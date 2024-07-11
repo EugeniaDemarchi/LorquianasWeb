@@ -1,7 +1,46 @@
-/*****************BELOW 1344 PX (for smaller desktops)******************/
-@media (max-width: 84em) {
+/*****************BELOW 2560 PX******************/
+@media (max-width: 160em) {
   h1 {
     margin-bottom: 3rem;
+    margin-top: 5rem;
+  }
+  header .container {
+    display: flex;
+    column-gap: 6rem;
+    margin-top: 8rem;
+    flex-direction: row;
+  }
+  .header-container img {
+    width: 50%;
+    border-radius: 1rem;
+  }
+}
+
+/*****************BELOW 1520 PX******************/
+@media (max-width: 95em) {
+  h1 {
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+  }
+  header .container {
+    display: flex;
+    column-gap: 6rem;
+    margin-top: 8rem;
+    flex-direction: row;
+  }
+}
+
+/*****************BELOW 1344 PX (for smaller desktops)******************/
+@media (max-width: 84em) {
+  header .container {
+    display: flex;
+    column-gap: 6rem;
+    margin-top: 8rem;
+    flex-direction: row;
+  }
+  h1 {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
   }
   h2 {
     letter-spacing: 0.3rem;
@@ -49,6 +88,12 @@
   html {
     /*9px /16px=0.5625*/
     font-size: 56.25%;
+  }
+  header .container {
+    display: flex;
+    column-gap: 6rem;
+    margin-top: 8rem;
+    flex-direction: row;
   }
   h1 {
     margin-bottom: 3rem;
@@ -102,8 +147,15 @@
     /*8px /16px=0.5*/
     font-size: 50%;
   }
+
   .container {
     width: auto;
+  }
+  header .container {
+    display: flex;
+    column-gap: 6rem;
+    margin-top: 8rem;
+    flex-direction: column;
   }
   main,
   .footer {
@@ -111,23 +163,21 @@
     width: auto;
   }
   h1 {
-    font-size: 7rem;
+    font-size: 10rem;
+    margin-top: 1rem;
   }
   h2 {
-    font-size: 3.7rem;
+    font-size: 5rem;
   }
-  .header-container {
-    display: flex;
-    /*flex-direction: column;*/
-    column-gap: 6rem;
-    row-gap: 2rem;
-    margin-top: 8rem;
-  }
+
   .header-container img {
     width: 100%;
     border-radius: 1rem;
   }
-
+  #shopFlowers {
+    font-size: small;
+    width: fit-content;
+  }
   .grid-cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -161,6 +211,10 @@
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+  .btn--small {
+    font-size: small;
+    text-align: center;
+  }
   .btn--big {
     width: 20rem;
   }
@@ -183,13 +237,24 @@
 @media (max-width: 44em) {
   h1 {
     font-size: 7.8rem;
+    margin-top: 0.2rem;
   }
   h2 {
     font-size: 3.3rem;
   }
+  header .container {
+    margin-top: 1rem;
+  }
+  /*   .header-container {
+    row-gap: 2rem;
+  } */
   /*   .container {
     width: auto;
   } */
+  #shopFlowers {
+    font-size: small;
+    width: fit-content;
+  }
   .self-intro {
     padding: 2rem;
   }
@@ -229,23 +294,26 @@
     display: flex;
     flex-direction: column;
   }
+
   .container {
     width: auto;
   }
   .header-container {
-    display: flex;
-    flex-direction: column;
     column-gap: 6rem;
     row-gap: 2rem;
-    margin-top: 8rem;
+    margin-top: 0rem;
   }
 
   h1 {
-    font-size: 5.8rem;
+    font-size: 4.6rem;
     margin-bottom: 3rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  #shopFlowers {
+    font-size: small;
+    width: fit-content;
   }
   h3 {
     font-size: 3rem;
@@ -270,6 +338,7 @@
   .step-img-box:nth-child(6) {
     grid-row: 5;
   }
+
   .grid-cols {
     display: grid;
     grid-template-columns: 1fr;
@@ -312,11 +381,11 @@
     flex-direction: column;
   }
 }
-/*****************BELOW 360PX (for PHONES )******************/
+
 /*****************PHONES BETWEEN  320 AND 360PX*************/
 @media all and (min-width: 20em) and (max-width: 22.5em) {
   h1 {
-    font-size: 4rem;
+    font-size: 4.1rem;
     letter-spacing: 0.7rem;
     margin-bottom: 1rem;
   }
@@ -326,12 +395,19 @@
   .container {
     width: auto;
   }
+  header .container {
+  }
+
   div .header-text-box {
     width: auto;
     margin-top: 10px;
     max-width: fit-content;
   }
-  .header-container img {
+  #shopFlowers {
+    font-size: small;
+    width: fit-content;
+  }
+  header img {
     width: 100%;
   }
 
