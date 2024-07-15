@@ -2,42 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <meta
     name="description"
     content="Lorquianas are hand-made textile flowers, inspired in Lorcas literature. 
     They warm up any dull space, and are the most original present you can make.
      These pieces of art are made by Eugenia Demarchi, a contemporary visual artist from Argentina."
   />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="lorquianas-website-favicon---black.png"/>
     <link rel="apple-touch-icon" href="favicon apple.png"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600&family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <title>Handcraft flowers</title>
   </head>
+<body>
+<!--   <a href="#" class="lorquianas-btn"> -->
 
-
-
-  <body>
-    <main>
       <header>
+        <div id="header-logo">
+          <picture
+            ><source srcset="logo-web.webp" type="image/webp" />
+            <source srcset="logo-web.png" type="image/png" />
+            <img
+              src="logo-web.png"
+              class="img-logo"
+              alt="Flower centerpiece"
+            />
+          </picture>
+        </div> 
         <div class="container" id="firstContainer">
           <!-- <div class="header-container"> -->
        <div class="header-text-box">
-          <h1>LORQUIANAS</h1>
-          <h2>HANDCRAFT FLOWERS</h2>
+          <h1 id="lorquianas">LORQUIANAS</h1>
+          <h2 id="subtitle">HANDCRAFT FLOWERS</h2>
           <p class="header-text">
+            Joining art and design has never been so easy and within everybody's reach! <br>
             I am a visual artist passionete about color. I have been working on
             textile installations for the last years and came up with these
-            unique handmade product.
+            unique handmade product that will allow you personalize your workspace, business or home with a touch of color and originality!
+           
           </p>
-          <a class="btn btn--big" id="shopFlowers" href="#">Shop flowers</a>
+          <a class="btn btn--big" id="shopFlowers" href="#products">Shop flowers</a>
         </div>
           <picture
             ><source srcset="resized.webp" type="image/webp" />
@@ -52,78 +64,59 @@
     </div>
   </div>
       </header>
+<main>
+
+        <section class="section-featured">
+          <div class="container">
+            <h2 class="heading-featured-in">As featured in</h2>
+        <div class="logos">
+          <img src="logos/1.png" alt="">
+          <img src="logos/ANXO.png" alt="">
+          <img src="logos/Logotipo Manicura Femenino Blanco (1).png" alt="">
+        </div>
+          </div>
+        </section>
 
       <section>
         <div class="container">
         <h3 class="special">What makes this product special</h3>
         <div class="grid-3-cols ">
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="feature-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-              />
-            </svg>
+            <div class="icon-style">
+              <ion-icon  class="feature-icon" name="sunny-outline"></ion-icon>
+
+            </div>
             <p class="features-title"><strong>Warmth</strong></p>
-        
             <p class="features-text">
-              You will certainly warm up any space of your home by simply
-              placing the piece on any ferniture.
+              Observe how placing Lorquianas
+               in any space in your home or workplace creates a sense of warmth.
             </p>
           </div>
 
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="feature-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-              />
-            </svg>
+            <ion-icon class="feature-icon" name="sparkles-outline"></ion-icon>
+  
             <p class="features-title"><strong> Uniqueness</strong></p>
             <p class="features-text">
-            Handmade and absolutely unique!
+            Handmade and absolutely unique! It took me around ten years to enhance this product. 
+
             </p>
           </div>
 
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="feature-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
-              />
-            </svg>
+            <ion-icon class="feature-icon" name="send-outline"></ion-icon>
+  
             <p class="features-title"><strong>Colors upon request</strong></p>
             <p class="features-text">
-             Customize your flowers for a particular home space.
+             Youy may not only purchase the exhibited Lorquianas... 
+            <a id="a-customize" href="#customize">Customize</a> your flowers for a particular space.
             </p>
           </div>
         </div>
       </div>
       </section>
+
+
 
       <section>
         <div class="container">
@@ -166,7 +159,7 @@
 
       <section>
         <div class="container">
-        <div class="products">
+        <div class="products" id="products">
         <span class="subheading" >AVAILABLE PRODUCTS</span>
         <h4 class="small">Small pieces</h4>
           <div class="grid-flower-cols">
@@ -186,7 +179,7 @@
                 src="Lorquianas. Pequeñas/DW201015-63993.jpg"
                 alt="small piece of green flowers"
               />-->
-            <div class="flower-box">
+            <div class="flower-box" >
               <h5>LIMONAR</h5>
               <ul class="flower-details">
                 <li><span>18 X 11 X 9cm.</span></li>
@@ -399,10 +392,10 @@
       </section>
 
       <section>
-        <div class="container">
+        <div class="container" id="customize">
         <div class="on-request" id="how">
           <span class="subheading">Lorquianas upon request</span>
-          <h3 class="inner-designer">Turn into your own inner designer
+          <h3 class="inner-designer">Become your own interior designer!
           </h3>
         </div>
         <div class="grid-upon-request">
@@ -474,11 +467,69 @@
               </div>
             </div>
           </div>
-          <a class="btn btn--big" href="mailto:demarchieugenia23@gmail">Contact me</a>
+          <!-- <a class="btn btn--big" href="mailto:demarchieugenia23@gmail">Contact me</a> -->
         </div>
        </section>
          
-         
+       <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary" id="heading-form">Let's get in touch</h2>
+              <p class="cta-text">
+          As soon as I recieve your email i'll get in touch with you and we'll arrange every necessary detail.
+              </p>
+
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+    
+
+
+                <button class="btn btn--form">Contact me!</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Textile installation"
+            ></div>
+          </div>
+        </div>
+      </section>
         
           <section class="section-testimonials" id="testimonials">
             <div class="testimonials-container">
@@ -512,9 +563,6 @@
                 </figure>
               </div>
             </div>
-
-
-
 
           <div class="gallery">
             <figure class="gallery-item">
@@ -601,11 +649,7 @@
               </div>
             </figure>
 </div>
-   
         </section>
-
-
-
     </div>
   </main>
 

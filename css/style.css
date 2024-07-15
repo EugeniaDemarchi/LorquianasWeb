@@ -33,15 +33,17 @@ GREY COLOR: #343a40
 /*03---SHADOWS
         box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);*/
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1;
@@ -55,7 +57,6 @@ body {
   padding: 0 3.2rem;
 }
 
-header,
 section {
   margin-bottom: 12.8rem;
 }
@@ -65,6 +66,7 @@ section {
 header .img {
   border-radius: 1rem;
 }
+
 img {
   width: 100%;
   /*border-radius: 1rem;*/
@@ -113,9 +115,7 @@ h5 {
   font-size: 2rem;
   font-weight: 500;
 }
-#shopFlowers {
-  margin-bottom: 20px;
-}
+
 .btn:link,
 .btn:visited {
   background-color: #c2255c;
@@ -143,24 +143,86 @@ h5 {
   column-gap: 6rem;
   margin-top: 8rem;
 } */
+header {
+  background-color: #f80874;
+  /* margin-top: 12.8rem; */
+}
+#header-logo {
+  color: #eee;
+  width: 40rem;
+  position: relative;
+  top: 50px;
+  left: 80px;
+}
 
+.lorquianas-btn {
+  display: inline-block;
+}
+#firstContainer {
+  margin-top: 0;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+}
+#lorquianas {
+  color: #ffffff;
+}
+#subtitle {
+  color: #eee;
+}
 .header-container img {
   width: 100%;
   border-radius: 1rem;
 }
-.header-text-box {
-}
+
 .header-text {
   margin-top: 4rem;
   margin-bottom: 4.4rem;
   font-size: 2rem;
-  line-height: 1.9;
+  line-height: 3rem;
+  color: #ffffff;
+  width: 65rem;
+  font-weight: 400;
 }
 #shopFlowers {
   width: 23rem;
   text-align: center;
 }
-
+#shopFlowers:link,
+#shopFlowers:visited {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #f80874;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 4rem;
+  transition: all 0.3s;
+}
+#shopFlowers:hover,
+#shopFlowers:active {
+  background-color: #e4e1e1;
+}
+/****************SECTION FEATURES*****************/
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #888;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.logos img {
+  width: 15rem;
+}
 /*************FEATURES**************/
 .special {
   margin-bottom: 8rem;
@@ -170,12 +232,17 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 8rem;
 }
+
 .feature-icon {
-  stroke: #343a40;
+  color: #d6336c;
   width: 3.2rem;
   height: 3.2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.2rem;
+  background: #fff0f6;
+  padding: 1.6rem;
+  border-radius: 50%;
 }
+
 .features-title {
   font-size: 2rem;
   font-weight: bold;
@@ -185,6 +252,15 @@ h5 {
 .features-text {
   font-size: 2rem;
   line-height: 1.7;
+}
+#a-customize {
+  color: #343a40; /* Blue text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+#a-customize-link:hover {
+  color: #000000; /* White text on hover */
 }
 /*************SELF-INTRO*************/
 .grid-cols {
@@ -198,7 +274,7 @@ h5 {
   border-radius: 1rem;
 }
 .self-intro {
-  background-color: #fff0f6;
+  background-color: #d6336c; /* #f80874; */
   padding: 2.6rem;
   border-radius: 1.2rem;
 
@@ -207,6 +283,7 @@ h5 {
 .text-ED {
   font-size: 2.2rem;
   line-height: 5rem;
+  color: #ffffff;
   /*align-self: center;*/
 }
 .eugenia {
@@ -370,6 +447,125 @@ h5 {
   border-radius: 1rem;
 }
 
+/******************* CTA SECTION *********************/
+
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
+}
+.section-cta .container {
+  padding: 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #f80874;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #f80874, #c2255c);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #555;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+  color: #ffffff;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(236, 124, 158, 0.35),
+      rgba(245, 69, 136, 0.35)
+    ),
+    url("../form/DW160330-10847-Editar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#heading-form {
+  color: #ffffff;
+}
+label {
+  color: #ffffff;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+#select-where {
+  color: #555;
+}
+.btn--form {
+  background-color: #770745;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
 /*******************FOOTER*******************/
 .footer {
   padding: 12.8rem 0;
