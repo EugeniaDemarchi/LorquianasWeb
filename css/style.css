@@ -225,6 +225,42 @@ header {
 .logos img {
   width: 15rem;
 }
+#shopFlowers:link,
+#shopFlowers:visited {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #f80874;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 4rem;
+  transition: all 0.3s;
+}
+#shopFlowers:hover,
+#shopFlowers:active {
+  background-color: #e4e1e1;
+}
+/****************SECTION FEATURES*****************/
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #888;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.logos img {
+  width: 15rem;
+}
 /*************FEATURES**************/
 .special {
   margin-bottom: 8rem;
@@ -550,6 +586,13 @@ label {
   justify-content: space-between;
 }
 #btn-form:hover {
+.btn--form {
+  background-color: #770745;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
   background-color: #fff;
   color: #555;
 }
@@ -561,6 +604,9 @@ label {
   font-size: 1.5rem;
   font-weight: 400;
   padding: 1rem 1.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
   border-radius: 9px;
   border: none;
   cursor: pointer;
