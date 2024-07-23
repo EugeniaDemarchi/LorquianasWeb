@@ -141,60 +141,63 @@
   }
 }
 
-/*****************BELOW 940PX (for tablets )******************/
-@media (max-width: 59em) {
-  html {
-    /*8px /16px=0.5*/
-    font-size: 50%;
+/*****************BELOW 1024PX (for tablets )******************/
+@media (max-width: 64rem) {
+  #header-logo {
+    display: none;
   }
-
-  .container {
-    width: auto;
-  }
-  header .container {
+  #firstContainer {
     display: flex;
-    column-gap: 6rem;
-    margin-top: 8rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .img-header {
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+  .header-text-box {
+    display: flex;
     flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
   }
-  main,
-  .footer {
-    max-width: auto;
-    width: auto;
-  }
-  h1 {
-    font-size: 10rem;
-    margin-top: 1rem;
-  }
-  h2 {
-    font-size: 5rem;
+  .header-text {
+    width: 45rem;
+    font-size: 2.6rem;
+    margin-bottom: 8rem;
+    line-height: 5rem;
   }
 
-  .header-container img {
-    width: 100%;
-    border-radius: 1rem;
+  h1 {
+    font-size: 5.6rem;
+    margin-bottom: 3rem;
+  }
+  #subtitle {
+    font-size: 3.5rem;
+    word-spacing: 1.8rem;
   }
   #shopFlowers {
     font-size: small;
     width: fit-content;
+    justify-self: end;
   }
+  .logos {
+    gap: 5rem;
+    width: 100rem;
+  }
+
   .grid-cols {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 3rem;
   }
-  .chair {
-    display: none;
-  }
-  .eugenia {
-    width: 70%;
-    justify-self: center;
-    align-self: center;
-  }
+
   .grid-flower-cols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8rem;
+    gap: 5rem;
   }
   .section-testimonials {
     grid-template-columns: 1fr;
@@ -208,8 +211,11 @@
     line-height: 5rem;
     align-self: center;
   }
+  .section-cta {
+    padding: 4.8rem 2rem 12.8rem;
+  }
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   .btn--small {
     font-size: small;
@@ -225,7 +231,6 @@
     padding: 20px;
   }
   .footer-info {
-    /* max-width: 120rem;*/
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -233,139 +238,146 @@
     align-items: center;
   }
 }
-/*****************BELOW 704PX (for smaller tablets )******************/
-@media (max-width: 44em) {
-  h1 {
-    font-size: 7.8rem;
-    margin-top: 0.2rem;
+
+/*****************BELOW 768PX (for PHONES )******************/
+
+@media all and (max-width: 48rem) {
+  #header-logo {
+    display: none;
   }
-  h2 {
-    font-size: 3.3rem;
-  }
-  header .container {
-    margin-top: 1rem;
-  }
-  /*   .header-container {
-    row-gap: 2rem;
-  } */
-  /*   .container {
-    width: auto;
-  } */
-  #shopFlowers {
-    font-size: small;
+  header {
     width: fit-content;
   }
-  .self-intro {
-    padding: 2rem;
-  }
-  .self-intro img {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .grid-3-cols {
+  #firstContainer {
     display: flex;
     flex-direction: column;
-    row-gap: 6rem;
-    padding: 0 1rem 8rem 1rem;
-  }
-  .grid-flower-cols {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 8rem;
-  }
-  div .flower-price {
     justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
   }
-  .heading-secondary {
-    margin-bottom: 8rem;
-  }
-  .grid-cols img {
-    width: 100%;
+  .img-header {
+    max-width: 100%;
     border-radius: 1rem;
   }
-  .btn--big {
-    width: 20rem;
+  .header-text-box {
+    align-self: flex-start;
   }
-}
-/*****************BELOW 544PX (for PHONES )******************/
-
-@media (max-width: 34em) {
-  header {
-    display: flex;
-    flex-direction: column;
+  .header-text {
+    width: fit-content;
+    margin-bottom: 2rem;
   }
 
-  .container {
-    width: auto;
-  }
-  .header-container {
-    column-gap: 6rem;
-    row-gap: 2rem;
-    margin-top: 0rem;
-  }
-
-  h1 {
-    font-size: 4.6rem;
+  #lorquianas {
+    width: fit-content;
+    font-size: 10.5rem;
     margin-bottom: 3rem;
   }
-  h2 {
-    font-size: 2.5rem;
+  #subtitle {
+    font-size: 3.5rem;
+    letter-spacing: 2rem;
   }
   #shopFlowers {
     font-size: small;
     width: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .logos {
+    gap: 1rem;
+    width: 100%;
+  }
+  .logos img {
+    width: 20%;
   }
   h3 {
     font-size: 3rem;
   }
 
   .grid-3-cols {
-    display: flex;
-    flex-direction: column;
-  }
-  .grid-flower-cols {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
   }
 
-  .grid-upon-request {
-    grid-template-columns: 1fr;
+  .self-intro {
+    background-color: #f80874;
+    padding: 1.5rem;
+    border-radius: 1rem;
   }
-  .step-img-box:nth-child(2) {
-    grid-row: 1;
-  }
-
-  .step-img-box:nth-child(6) {
-    grid-row: 5;
-  }
-
   .grid-cols {
     display: grid;
-    grid-template-columns: 1fr;
-    padding: 4rem;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
     justify-items: center;
+    padding: 1rem 2rem;
   }
+  .chair {
+    display: none;
+  }
+  .text-ED {
+    line-height: 3.5rem;
+    font-weight: 200;
+    width: 100%;
+  }
+
   .grid-cols img {
     width: 100%;
     border-radius: 1rem;
   }
-  .eugenia {
-    justify-items: center;
+
+  .grid-flower-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-bottom: 0;
+  }
+
+  .step-img-box:nth-child(1) {
+    grid-row: 2;
+  }
+
+  .section-cta {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-img-box {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(236, 124, 158, 0.35),
+        rgba(245, 69, 136, 0.35)
+      ),
+      url("../form/DW160330-10847-Editar.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .cta-text-box {
+    padding: 4.8rem 3.4rem 6.4rem 3.4rem;
+  }
+  #heading-form {
+    font-size: 3rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
   }
   .available-products {
     font-size: 2rem;
   }
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+  .section-testimonials {
+    margin-top: 24rem;
   }
   .testimonials-container {
     padding: 5.6rem;
   }
   .testimonials {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
   h4 .small-pieces {
     font-size: 4.2rem;
   }
@@ -381,34 +393,79 @@
     flex-direction: column;
   }
 }
-
-/*****************PHONES BETWEEN  320 AND 360PX*************/
-@media all and (min-width: 20em) and (max-width: 22.5em) {
-  h1 {
-    font-size: 4.1rem;
-    letter-spacing: 0.7rem;
-    margin-bottom: 1rem;
+@media all and (min-width: 23.4375em) and (max-width: 34em) {
+  #header-logo {
+    display: none;
   }
-  h2 {
-    font-size: 2rem;
-  }
-  .container {
-    width: auto;
+  header {
+    width: fit-content;
   }
 
-  div .header-text-box {
-    width: auto;
+  #firstContainer {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+  }
+  .header-text-box {
     margin-top: 10px;
-    max-width: fit-content;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  #lorquianas {
+    width: fit-content;
+    font-size: 5.2rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 1.2rem;
+    margin-top: -10px;
+    text-align: center;
+  }
+  #subtitle {
+    font-size: 2.3rem;
+    word-spacing: normal;
+    text-align: start;
+    line-height: 3rem;
+  }
+  .header-text {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #ffffff;
+    width: fit-content;
+    font-weight: 400;
   }
   #shopFlowers {
     font-size: small;
-    width: fit-content;
-  }
-  header img {
-    width: 100%;
+    max-width: fit-content;
   }
 
+  .img-header {
+    max-width: fit-content;
+    border-radius: 1rem;
+  }
+  .section-featured {
+    width: 425px;
+  }
+  .logos {
+    gap: 1rem;
+  }
+  .logos img {
+    width: 30%;
+  }
+  .section-features {
+    width: 425px;
+  }
+  .grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+  }
+  .section-self-intro {
+    width: 425px;
+  }
+  .grid-cols {
+    padding: 3rem 0rem;
+  }
   .grid-cols img {
     width: 100%;
     border-radius: 1rem;
@@ -418,11 +475,12 @@
   }
 
   .img-logo {
-    width: 70%;
+    width: 100%;
   }
 
   .text-ED {
     line-height: 1.7;
+    font-weight: 300;
   }
 
   .grid-cols {
@@ -431,10 +489,61 @@
     align-items: center;
     justify-items: center;
   }
+  .section-products {
+    width: 425px;
+  }
+  .grid-flower-cols {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 6rem;
+  }
+  .small {
+    margin-top: 0;
+  }
+  h4 {
+    margin-top: 8rem;
+  }
+  .section-upon-request {
+    width: 425px;
+    margin-bottom: 0;
+  }
 
-  .heading-secondary {
-    margin-bottom: 8rem;
-    font-size: 4rem;
+  .grid-upon-request {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  #step-text-2 {
+    grid-row: 3 / span 4;
+  }
+  .section-cta {
+    width: 425px;
+    padding: 4.8rem 3.25rem 0rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  #heading-form {
+    font-size: 3rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  #select-where {
+    font-size: 1.8rem;
+  }
+  .section-testimonials {
+    width: 425px;
   }
   .testimonials-container {
     padding: 4rem;
@@ -443,10 +552,226 @@
     grid-template-columns: 1fr;
   }
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer {
+    width: 425px;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 3rem;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
   }
   .footer-info {
     display: flex;
     flex-direction: column;
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+}
+
+/*****************PHONES BETWEEN 320px AND 360PX*************/
+@media all and (min-width: 20em) and (max-width: 23.4375rem) {
+  #header-logo {
+    display: none;
+  }
+  header {
+    width: fit-content;
+  }
+
+  #firstContainer {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+  }
+  .header-text-box {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  #lorquianas {
+    width: fit-content;
+    font-size: 5.2rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 1.2rem;
+    margin-top: -10px;
+    text-align: center;
+  }
+  #subtitle {
+    font-size: 2.3rem;
+    word-spacing: normal;
+    text-align: start;
+    line-height: 3rem;
+  }
+  .header-text {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #ffffff;
+    width: fit-content;
+    font-weight: 400;
+  }
+  #shopFlowers {
+    font-size: small;
+    max-width: fit-content;
+  }
+
+  .img-header {
+    max-width: fit-content;
+    border-radius: 1rem;
+  }
+  .section-featured {
+    width: 413.69px;
+  }
+  .logos {
+    gap: 1rem;
+  }
+  .logos img {
+    width: 30%;
+  }
+  .section-features {
+    width: 413.69px;
+  }
+  .grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+  }
+  .section-self-intro {
+    width: 413.69px;
+  }
+  .grid-cols {
+    padding: 3rem 0rem;
+  }
+  .grid-cols img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .eugenia {
+    width: 100%;
+  }
+
+  .img-logo {
+    width: 100%;
+  }
+
+  .text-ED {
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .grid-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .section-products {
+    width: 413.69px;
+  }
+  .grid-flower-cols {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 6rem;
+  }
+  .small {
+    margin-top: 0;
+  }
+  h4 {
+    margin-top: 6rem;
+  }
+  .section-upon-request {
+    width: 413.69px;
+    margin-bottom: 0;
+  }
+
+  .grid-upon-request {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  #step-text-2 {
+    grid-row: 3 / span 4;
+  }
+  .section-cta {
+    width: 413.69px;
+    padding: 4.8rem 3.25rem 0rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  #heading-form {
+    font-size: 3rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  #select-where {
+    font-size: 1.8rem;
+  }
+  .section-testimonials {
+    width: 413.69px;
+  }
+  .testimonials-container {
+    padding: 4rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer {
+    width: 413.69px;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 3rem;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
   }
 }
