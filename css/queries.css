@@ -83,7 +83,7 @@
   }
 }
 
-/*****************BELOW 1200 PX (for landscape tablets -apaisadas-)******************/
+/*****************BELOW 1200 PX (for landscape tablets)******************/
 @media (max-width: 75em) {
   html {
     /*9px /16px=0.5625*/
@@ -254,6 +254,7 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 2rem;
+    padding-bottom: 10px;
   }
   .img-header {
     max-width: 100%;
