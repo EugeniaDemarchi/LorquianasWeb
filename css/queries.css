@@ -160,7 +160,7 @@
     text-align: center;
   }
   .img-header {
-    max-width: 90%;
+    max-width: 80%;
     border-radius: 1rem;
   }
   #lorquianas {
@@ -273,7 +273,7 @@
   .header-text {
     width: 100%;
     margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-top: 0;
     text-align: center;
   }
@@ -289,10 +289,10 @@
   #shopFlowers {
     font-size: small;
     width: fit-content;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
   .img-header {
-    width: 60%;
+    width: 55%;
     border-radius: 1rem;
   }
   .div-img-header {
@@ -415,7 +415,7 @@
   header {
     width: 100%;
     padding-top: 4rem;
-    padding-bottom: 2.9rem;
+    padding-bottom: 6rem;
     margin-top: 0rem;
   }
   #firstContainer {
