@@ -266,7 +266,25 @@ header {
   line-height: 5rem;
   color: #ffffff;
 }
+a {
+  color: white;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: purple;
+}
 
+a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+a:active {
+  color: white;
+}
 /*********AVAILABLE PRODUCTS**********/
 
 .products .subheading {
